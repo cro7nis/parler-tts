@@ -28,3 +28,5 @@ https://github.com/cro7nis/parler-tts/assets/166608635/d916a91d-eb91-41f0-8601-0
 - Go to LEASES and press the URI
 - Check the [Akash docs](https://akash.network/docs/deployments/cloudmos-deploy/) if you have and questions
 - Start generating speech!
+  - Add the input text for speech generation
+  - Provide a description of the speaker to adapt the generated voice
