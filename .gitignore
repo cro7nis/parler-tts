@@ -1,3 +1,4 @@
 checkpoints
 scripts
 .idea
+*__pycache__*
