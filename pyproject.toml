@@ -1,0 +1,40 @@
+[tool.poetry]
+name = "parler-tts-app"
+version = "0.1.0"
+description = ""
+authors = ["cro7 <cro7nis@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = ">=3.10,<3.13"
+torch = "2.0.1"
+loguru = "*"
+transformers = "*"
+optimum = "*"
+accelerate = "*"
+dynaconf = "*"
+sentencepiece = "*"
+cryptography = "*"
+omegaconf = "*"
+streamlit = "*"
+parler_tts= { git = "https://github.com/huggingface/parler-tts" }
+
+
+
+[tool.poetry.group.dev]
+optional = true
+
+[tool.poetry.group.dev.dependencies]
+pytest = "*"
+pytest-cov = "*"
+tinyaes = "*"
+pecan = "*"
+httpx = "*"
+
+[tool.pytest.ini_options]
+log_cli = true
+log_cli_level = 'warning'
+minversion = "6.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

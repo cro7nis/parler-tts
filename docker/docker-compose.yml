@@ -1,0 +1,17 @@
+version: '3.5'
+
+services:
+
+  parler:
+    image: cro7/parler-tts:0.0.1
+    environment:
+      PORT: 8051
+    ports:
+      - "80:8051"
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [ gpu ]

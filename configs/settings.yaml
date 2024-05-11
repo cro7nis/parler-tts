@@ -1,0 +1,5 @@
+default:
+  tts:
+    model_id: parler-tts/parler_tts_mini_v0.1
+    device: cuda:0
+    cache_dir: checkpoints

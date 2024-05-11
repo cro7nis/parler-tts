@@ -1,0 +1,38 @@
+---
+version: "2.0"
+services:
+  tts:
+    image: cro7/parler-tts:0.0.1
+    expose:
+      - port: 8051
+        as: 8051
+        to:
+          - global: true
+    env:
+      - PORT=8051
+profiles:
+  compute:
+    tts:
+      resources:
+        cpu:
+          units: 2
+        memory:
+          size: 5Gi
+        storage:
+          - size: 10Gi
+        gpu:
+          units: 1
+          attributes:
+            vendor:
+              nvidia:
+  placement:
+    dcloud:
+      pricing:
+        tts:
+          denom: uakt
+          amount: 1000
+deployment:
+  tts:
+    dcloud:
+      profile: tts
+      count: 1
