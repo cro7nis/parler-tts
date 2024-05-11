@@ -15,11 +15,11 @@ profiles:
     tts:
       resources:
         cpu:
-          units: 2
+          units: 6
         memory:
-          size: 5Gi
+          size: 8Gi
         storage:
-          - size: 10Gi
+          - size: 16Gi
         gpu:
           units: 1
           attributes:
