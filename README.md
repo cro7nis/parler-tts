@@ -7,6 +7,10 @@ The project is developed for the **Deploy a TTS solution on Akash** zealy task w
 
 
 
+https://github.com/cro7nis/parler-tts/assets/166608635/d916a91d-eb91-41f0-8601-0c657b8be574
+
+
+
 - Create and fund a Keplr or Leap wallet
   - [Keplr wallet](https://akash.network/docs/getting-started/token-and-wallets/#keplr-wallet)
   - [Leap wallet](https://akash.network/docs/getting-started/token-and-wallets/#leap-cosmos-wallet)
